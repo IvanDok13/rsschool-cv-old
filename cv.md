@@ -61,7 +61,21 @@ console.log(tailAndHead([35456,782,569,2454,875])); //12012
 ```
 ---
 ### Projects
+1. Slide-Project
+2. Drag-and-Drop
+3. Slider-of-pictures
+4. Mini-game-interactive-board
+5. Game-Aim-training
+6. Figma-site
+
 ---
 ### Courses:
+Result School - HTML&CSS<br>
+Hexlet - Front-end Developer<br>
+PASV - JavaScript<br>
+
 ---
 ### Languages:
+- Russian \- Native
+- English \- Upper-intermediate
+
