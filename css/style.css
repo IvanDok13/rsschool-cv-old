@@ -12,7 +12,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 35px;
-  color: #636060;
+  color: #f9b3b3;
 }
 
 img {
@@ -21,7 +21,7 @@ img {
 }
 
 .wrapper {
-  max-width: 1060px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0px 15px;
 }
@@ -30,7 +30,7 @@ img {
 
 .header {
   width: 100%;
-  background: #c1edb9;
+  background: #b3ffa2;
 }
 
 .header__wrapper {
@@ -41,9 +41,26 @@ img {
   padding: 42px 0;
 }
 
-.header__logo {
+.header__button {
+  display: flex;
+  border-radius: 10px;
+  border: 2px solid #E06733;
+  background: rgba(224, 103, 51, 0.00);
+  padding: 3px 5px;
+}
+
+.header__button:hover,
+.header__button:active,
+.header__button:focus {
+  color: #E06733;
+  opacity: 1.5;
+  cursor: pointer;
+}
+
+.header__ico {
   text-align: center;
   align-items: center;
+  max-width: 30px;
 }
 
 .header__list {
@@ -52,7 +69,7 @@ img {
 }
 
 .header__item {
-  margin-right: 46px;
+  margin-right: 60px;
 }
 
 .header__item:last-child {
@@ -60,13 +77,13 @@ img {
 }
 
 .header__link {
-  font-family: 'Inika';
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 16px;
   line-height: 50px;
   color: #010201;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .header__link:hover,
