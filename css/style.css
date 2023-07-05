@@ -184,10 +184,51 @@ img {
   padding-bottom: 20px;
   text-align: left;
 }
+
 /* about end */
 
 /* skills start */
 
+.skills {
+  background-color: #b3ffa2;
+}
 
+.skills__wrapper {
+  padding: 10px 0;
+  max-width: 1060px;
+}
+
+.skills__subtitle {
+  font-size: 2.5vh;
+  padding-bottom: 20px;
+}
+
+.skills__header {
+  font-size: 4vh;
+  padding-bottom: 20px;
+}
+
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.skills__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 50px;
+  color: #010201;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #E06733;
+  border-radius: 20px;
+}
 
 /* skills end */
