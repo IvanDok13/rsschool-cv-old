@@ -147,7 +147,49 @@
     </section>
     <!-- skills end -->
 
+    <!-- code-example start -->
+    <section class="code-example">
+      <div class="wrapper">
+        <div class="code-example__wrapper">
+          <h2 class="code-example__header">Code example</h2>
+          <details>
+            <summary class="code-example__subtitle">From CodeWars</summary>
+            <pre>
+          <code data-language = "javascript">
+// Training JS #30: methods of arrayObject---reduce() and reduceRight()
 
+// First, from left to right, the tail of an element and the head of the next element are added together. 
+//The results are put into an array. 
+//And then, calculate their product and return it.
+
+function tailAndHead(arr){
+  let copy = arr.slice();
+  let newCopy = copy.reduce((a, b, i) => {
+    b += '';
+    if (i > 0) a.push((b[0]));
+    return a; 
+   }, [])
+  let newCopyEnd = copy.reduce((a, b, i) => {
+    b += '';
+    if (i < copy.length - 1) a.push((b[b.length - 1]));
+    return a; 
+   }, [])
+  let sum = newCopy.reduce((a, b, i, arr) => a.concat(+newCopy[i] + +newCopyEnd[i]),[]);
+  let res = sum.reduce((a, b) => a * b);
+ return res; 
+}
+
+console.log(tailAndHead([123,456,789,12,34,56,78])); //532350
+console.log(tailAndHead([1,2,3,4,5])); //945
+console.log(tailAndHead([111,2345,66,78,900])); //7293
+console.log(tailAndHead([35456,782,569,2454,875])); //12012
+          </code>
+        </pre>
+          </details>
+        </div>
+      </div>
+    </section>
+    <!-- code-example end -->
   </main>
 </body>
 

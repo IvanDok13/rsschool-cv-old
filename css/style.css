@@ -232,3 +232,29 @@ img {
 }
 
 /* skills end */
+
+/* code-example start */
+
+.code-example__wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 1060px;
+  background-color: #f0f4ef;
+  padding: 10px 20px 0px 20px;
+  border-radius: 10px;
+  border: 2px solid #E06733;
+}
+
+.code-example__header {
+  font-size: 4vh;
+}
+
+.code-example__subtitle {
+  padding-bottom: 20px;
+}
+
+/* code-example end */
