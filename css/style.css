@@ -13,6 +13,7 @@ body {
   font-size: 20px;
   line-height: 35px;
   color: #000000;
+  background: #636e61;
 }
 
 img {
@@ -189,13 +190,12 @@ img {
 
 /* skills start */
 
-.skills {
-  background-color: #b3ffa2;
-}
-
 .skills__wrapper {
-  padding: 10px 0;
   max-width: 1060px;
+  background-color: #b3ffa2;
+  padding: 10px 20px 20px 20px;
+  border-radius: 10px;
+  border: 2px solid #E06733;
 }
 
 .skills__subtitle {
