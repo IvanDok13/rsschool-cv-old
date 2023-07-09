@@ -452,3 +452,8 @@ img {
 
 /* footer end */
 
+@media (max-width: 939px) {
+  .avatar {
+    display: none;
+  }
+}
