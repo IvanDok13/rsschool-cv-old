@@ -15,7 +15,7 @@
     <div class="wrapper">
       <div class="header__wrapper">
         <button class="header__button" title="Activate light mode" type="button">
-          <img class="header__ico" src="./assets/svg/moon-and-stars-svgrepo-com.svg" id="moon-svg">
+          <img class="header__ico" src="./assets/svg/moon-and-stars-svgrepo-com.svg" alt="moon-svg">
         </button>
         <nav class="header__nav">
           <ul class="header__list">
@@ -42,8 +42,8 @@
         <!-- <button class="header__burger">
           <span class="burger__line"></span>
         </button> -->
-        </di>
       </div>
+    </div>
   </header>
   <!-- header end -->
 
@@ -63,29 +63,29 @@
               Ivan Klochkov
             </h1>
             <div class="about__buttons">
-              <button class="about__button download-button" type="submit">
-                <a class="about__button-link" href="./assets/content/pdf/CV_Ivan_Klochkov_Front-End_Developer.pdf"
-                  title="" download>
-                  <span>
-                    Download CV
-                  </span>
-                </a>
-                <img class="about__ico download-img" src="./assets/svg/download-svgrepo-com.svg" id="download-svg">
-              </button>
+              <a class="about__link" href="./assets/content/pdf/CV_Ivan_Klochkov_Front-End_Developer.pdf" title=""
+                download>
+                <span>
+                  Download CV
+                </span>
+                <img class="about__ico download-img" src="./assets/svg/download-svgrepo-com.svg" alt="download-svg">
+              </a>
 
-              <button class="about__button github-button" type="submit">
-                <a class="about__button-link" href="https://github.com/IvanDok13">
-                  <span>GitHub</span>
-                </a>
+              <a class="about__link" href="https://github.com/IvanDok13">
+                <span>
+                  GitHub
+                </span>
                 <img class="about__ico github-ico" src="./assets/svg/github-svgrepo-com.svg" alt="github-ico">
-              </button>
+              </a>
 
-              <button class="about__button telegram-button" type="submit">
-                <a class="about__button-link" href="https://t.me/DokIvan" target="_blank">
-                  <span>Telegram</span>
-                </a>
+
+              <a class="about__link" href="https://t.me/DokIvan" target="_blank">
+                <span>
+                  Telegram
+                </span>
                 <img class="about__ico telegram-ico" src="./assets/svg/telegram-svgrepo-com.svg" alt="telegram-ico">
-              </button>
+              </a>
+
             </div>
 
             <p class="about__text">
@@ -157,7 +157,7 @@ function tailAndHead(arr){
    }, [])
   let newCopyEnd = copy.reduce((a, b, i) => {
     b += '';
-    if (i < copy.length - 1) a.push((b[b.length - 1]));
+    if (i &lt copy.length - 1) a.push((b[b.length - 1]));
     return a; 
    }, [])
   let sum = newCopy.reduce((a, b, i, arr) => a.concat(+newCopy[i] + +newCopyEnd[i]),[]);
@@ -190,13 +190,14 @@ console.log(tailAndHead([35456,782,569,2454,875])); //12012
               <a class="projects__link" href="https://ivandok13.github.io/traveling-site/#sign-in" target="_blank">
                 <img class="projects__image" src="./assets/img/traveling-site.png" width="1722" height="969"
                   alt="Traveling site screenshot">
-                <h3 class="projects__header">Traveling site
-                  <div class="projects__technologies">
+                <div class="projects__technologies">
+                  <h3 class="projects__header">Traveling site</h3>
+                  <div class="project__technology">
                     <img src="./assets/svg/html-5-svgrepo-com.svg" alt="HTML5" title="HTML5">
                     <img src="./assets/svg/css-svgrepo-com.svg" alt="CSS3" title="CSS3">
                     <img src="./assets/svg/js-svgrepo-com.svg" alt="JavaScript" title="JavaScript">
                   </div>
-                </h3>
+                </div>
               </a>
             </li>
           </ul>
@@ -290,12 +291,12 @@ console.log(tailAndHead([35456,782,569,2454,875])); //12012
     <div class="wrapper">
       <div class="footer__wrapper">
         <a class="footer__github" href="https://github.com/IvanDok13" target="_blank">
-          <img src="./assets/svg/github-svgrepo-com.svg" width="40" height="20" alt="github-ico" class="footer__ico">
+          <img class="footer__ico" src="./assets/svg/github-svgrepo-com.svg" width="40" height="20" alt="github-ico">
           My GitHub
         </a>
         <p class="footer__year">2023</p>
         <a class="footer__rsschool" href="https://rs.school/js-stage0/" target="_blank">
-          <img src="./assets/svg/rs_school_js.svg" width="86" height="32" alt="RS School" />
+          <img src="./assets/svg/rs_school_js.svg" width="86" height="32" alt="RS School">
         </a>
       </div>
     </div>
