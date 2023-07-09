@@ -157,7 +157,7 @@ function tailAndHead(arr){
    }, [])
   let newCopyEnd = copy.reduce((a, b, i) => {
     b += '';
-    if (i &lt copy.length - 1) a.push((b[b.length - 1]));
+    if (i &lt; copy.length - 1) a.push((b[b.length - 1]));
     return a; 
    }, [])
   let sum = newCopy.reduce((a, b, i, arr) => a.concat(+newCopy[i] + +newCopyEnd[i]),[]);
