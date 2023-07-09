@@ -108,6 +108,9 @@ img {
 
 .about__img {
   padding-left: 40px;
+  width: 100%;
+  height: max-content;
+  object-fit: contain;
 }
 
 .avatar {
@@ -317,8 +320,6 @@ img {
   width: 100%;
   height: max-content;
   object-fit: contain;
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
 }
 
 .projects__header {
@@ -347,30 +348,9 @@ img {
   width: 30px;
 }
 
-.projects__item:hover .projects__image {
-  box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.3);
-}
-
-.projects__item:hover .projects__header {
-  text-shadow: 0px 3px 3px rgba(150, 150, 150, 1);
-}
-
 .projects__item:hover .projects__header:after {
   width: 100%;
   background-color: #f6d502;
-}
-
-.projects__item:active .projects__image {
-  box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.2);
-}
-
-.projects__item:active .projects__header {
-  color: rgba(0, 0, 0, 0.5);
-  text-shadow: none;
-}
-
-.projects__item:active .projects__header:after {
-  background-color: #ccc;
 }
 
 /* projects end */
@@ -379,7 +359,7 @@ img {
 
 .education__wrapper {
   padding-top: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .education__subtitle {
@@ -398,7 +378,7 @@ img {
   font-style: normal;
   line-height: 25px;
   text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 36px;
   font-size: 4vh;
 }
@@ -435,3 +415,40 @@ img {
 }
 
 /* Education end */
+
+
+/* footer start */
+
+.footer {
+  background-color: white;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 20px 60px 20px 60px;
+  color: black;
+}
+
+.footer__github {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  padding-left: 40px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer__year {
+  justify-self: center;
+}
+
+.footer__rsschool {
+  justify-self: end;
+  height: 32px;
+}
+
+/* footer end */
+
