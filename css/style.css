@@ -7,13 +7,13 @@ html {
 }
 
 body {
-  font-family: Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 35px;
-  color: #000000;
-  background: #636e61;
+  color: #ffffff;
+  background: #000000;
 }
 
 img {
@@ -31,7 +31,7 @@ img {
 
 .header {
   width: 100%;
-  background: #b3ffa2;
+  background: #696a68;
 }
 
 .header__wrapper {
@@ -53,7 +53,6 @@ img {
 .header__button:hover,
 .header__button:active,
 .header__button:focus {
-  color: #E06733;
   opacity: 1.5;
   cursor: pointer;
 }
@@ -77,19 +76,19 @@ img {
 
 .header__link {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 16px;
   line-height: 50px;
-  color: #010201;
+  color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header__link:hover,
 .header__link:active,
 .header__link:focus {
-  color: #E06733;
-  opacity: 0.75;
+  color: #f6d502;
   cursor: pointer;
 }
 
@@ -103,9 +102,8 @@ img {
   padding: 10px 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 10px;
   align-items: center;
-  max-width: 1060px;
 }
 
 .about__img {
@@ -123,20 +121,33 @@ img {
 }
 
 .about__header {
-  font-size: 5vh;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 6vh;
   padding-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .about__subtitle {
-  font-size: 4vh;
-  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vh;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f6d502;
 }
 
 .about__buttons {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-bottom: 20px;
 }
 
 .about__button {
@@ -146,7 +157,8 @@ img {
   text-align: center;
   justify-content: center;
   border-radius: 10px;
-  border: 2px solid #E06733;
+  color: #ffffff;
+  border: 2px solid #f6d502;
   background: rgba(224, 103, 51, 0.00);
   padding: 3px 5px;
   margin-right: 40px;
@@ -155,7 +167,6 @@ img {
 .about__button:hover,
 .about__button:active,
 .about__button:focus {
-  color: #E06733;
   opacity: 0.75;
   cursor: pointer;
 }
@@ -166,24 +177,18 @@ img {
 
 .about__button-link {
   text-decoration: none;
-  color: #000000;
-}
-
-.about__contact-links {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-  padding-top: 20px;
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #ffffff;
+  padding: 10px 10px;
 }
 
 .about__text {
   font-size: 2.4vh;
   padding-bottom: 20px;
   text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* about end */
@@ -191,21 +196,32 @@ img {
 /* skills start */
 
 .skills__wrapper {
-  max-width: 1060px;
-  background-color: #b3ffa2;
+  background-color: #f6d502;
   padding: 10px 20px 20px 20px;
   border-radius: 10px;
-  border: 2px solid #E06733;
+  border: 5px solid #ffffff;
 }
 
 .skills__subtitle {
-  font-size: 2.5vh;
+  font-size: 2vh;
   padding-bottom: 20px;
+  color: #000000;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .skills__header {
   font-size: 4vh;
   padding-bottom: 20px;
+  color: #000000;
+  font-style: normal;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .skills__list {
@@ -221,13 +237,14 @@ img {
   align-items: center;
   justify-content: center;
   font-style: normal;
+  line-height: 25px;
+  text-transform: uppercase;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 50px;
-  color: #010201;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
   text-decoration: none;
   text-transform: uppercase;
-  border: 2px solid #E06733;
+  border: 2px solid #ffffff;
   border-radius: 20px;
 }
 
@@ -242,33 +259,37 @@ img {
   align-items: center;
   margin-top: 40px;
   margin-bottom: 40px;
-  max-width: 1060px;
   background-color: #f0f4ef;
   padding: 10px 20px 0px 20px;
   border-radius: 10px;
-  border: 2px solid #E06733;
+  border: 5px solid #f6d502;
+  color: #000000;
 }
 
 .code-example__header {
   font-size: 4vh;
+  color: #000000;
 }
 
 .code-example__subtitle {
   padding-bottom: 20px;
+  color: #000000;
 }
 
 /* code-example end */
 
 /* projects start */
 
-.projects__header {
+.project__header {
   position: relative;
+  font-style: normal;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   margin-bottom: 36px;
   padding-left: 60px;
-  font-size: 24px;
-  line-height: 36px;
-  font-weight: 600;
+  font-size: 4vh;
 }
 
 .projects__list {
@@ -279,11 +300,13 @@ img {
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  padding-bottom: 20px;
 }
 
 .projects__link {
   text-decoration: none;
 }
+
 .projects__image {
   width: 100%;
   height: max-content;
@@ -292,7 +315,7 @@ img {
   text-decoration: none;
 }
 
-.projects__title {
+.projects__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -300,11 +323,11 @@ img {
   margin: 0;
   padding: 0 10px;
   font-weight: 400;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
-.projects__title:after {
+.projects__header:after {
   content: '';
   position: absolute;
   left: 0;
@@ -322,25 +345,25 @@ img {
   box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.3);
 }
 
-.projects__item:hover .projects__title {
+.projects__item:hover .projects__header {
   text-shadow: 0px 3px 3px rgba(150, 150, 150, 1);
 }
 
-.projects__item:hover .projects__title:after {
+.projects__item:hover .projects__header:after {
   width: 100%;
-  background-color: #f2c100;
+  background-color: #f6d502;
 }
 
 .projects__item:active .projects__image {
   box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.2);
 }
 
-.projects__item:active .projects__title {
+.projects__item:active .projects__header {
   color: rgba(0, 0, 0, 0.5);
   text-shadow: none;
 }
 
-.projects__item:active .projects__title:after {
+.projects__item:active .projects__header:after {
   background-color: #ccc;
 }
 
