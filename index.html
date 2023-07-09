@@ -1,10 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <title>Ivan Klochkov CV</title>
 </head>
+
 <body>
+  <!-- header start -->
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__wrapper">
+        <button class="header__button" title="Activate light mode" type="button">
+          <img class="header__ico" src="./assets/svg/moon-and-stars-svgrepo-com.svg" id="moon-svg">
+        </button>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#about-me">About</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#skills">Skills</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#code-example">Code</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#projects">Projects</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#contact">Contacts</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#education">Education</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- <button class="header__burger">
+          <span class="burger__line"></span>
+        </button> -->
+        </di>
+      </div>
+  </header>
+  <!-- header end -->
+
+  <main>
+    <!-- about start -->
+    <section class="about">
+      <div class="wrapper">
+        <div class="about__wrapper">
+          <div class="about__img">
+            <img class="avatar" src="./assets/img/my-photo.jpg" alt="photo-Ivan-Klochkov" height="400">
+          </div>
+          <div class="about__info">
+            <h3 class="about__subtitle">
+              Front-End developer
+            </h3>
+            <h1 class="about__header">
+              Ivan Klochkov
+            </h1>
+            <div class="about__buttons">
+              <button class="about__button download-button" type="submit">
+                <a class="about__button-link" href="./assets/content/pdf/CV_Ivan_Klochkov_Front-End_Developer.pdf"
+                  title="" download>
+                  <span>
+                    Download CV
+                  </span>
+                </a>
+                <img class="about__ico download-img" src="./assets/svg/download-svgrepo-com.svg" id="download-svg">
+              </button>
+
+              <button class="about__button github-button" type="submit">
+                <a class="about__button-link" href="https://github.com/IvanDok13">
+                  <span>GitHub</span>
+                </a>
+                <img class="about__ico github-ico" src="./assets/svg/github-svgrepo-com.svg" alt="github-ico">
+              </button>
+
+              <button class="about__button telegram-button" type="submit">
+                <a class="about__button-link" href="https://t.me/DokIvan" target="_blank">
+                  <span>Telegram</span>
+                </a>
+                <img class="about__ico telegram-ico" src="./assets/svg/telegram-svgrepo-com.svg" alt="telegram-ico">
+              </button>
+            </div>
+
+            <p class="about__text">
+              I'm Front-End developer based in St. Petersburg, Russia.
+            </p>
+            <p class="about__text">
+              When I tried JS, I decided to become an IT developer, because it's very interesting when you can use your
+              technical mind and see the result immediately.
+            </p>
+            <p class="about__text">
+              I have knowledge of JavaScript, CSS, HTML, Git, Figma.
+            </p>
+            <p class="about__text">
+              I have a master's degree and am a PhD student at the ITMO University.
+            </p>
+            <p class="about__text">
+              I really want to work both in a team and individually. I want to deepen and develop my knowledge and apply
+              it to real products.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+
+    <!-- skills start -->
+    <section class="skills">
+      <div class="wrapper">
+        <div class="skills__wrapper">
+          <h3 class="skills__subtitle">
+            Why hire me?
+          </h3>
+          <h2 class="skills__header">
+            Hard skills
+          </h2>
+          <ul class="skills__list">
+            <li class="skills__item">JavaScript</li>
+            <li class="skills__item">BEM</li>
+            <li class="skills__item">HTML, CSS</li>
+            <li class="skills__item">Figma</li>
+            <li class="skills__item">Git</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- skills end -->
+
+    <!-- code-example start -->
+    <section class="code-example">
+      <div class="wrapper">
+        <div class="code-example__wrapper">
+          <h2 class="code-example__header">Code example</h2>
+          <details>
+            <summary class="code-example__subtitle">From CodeWars</summary>
+            <pre>
+          <code data-language = "javascript">
+// Training JS #30: methods of arrayObject---reduce() and reduceRight()
+
+// First, from left to right, the tail of an element and the head of the next element are added together. 
+//The results are put into an array. 
+//And then, calculate their product and return it.
+
+function tailAndHead(arr){
+  let copy = arr.slice();
+  let newCopy = copy.reduce((a, b, i) => {
+    b += '';
+    if (i > 0) a.push((b[0]));
+    return a; 
+   }, [])
+  let newCopyEnd = copy.reduce((a, b, i) => {
+    b += '';
+    if (i < copy.length - 1) a.push((b[b.length - 1]));
+    return a; 
+   }, [])
+  let sum = newCopy.reduce((a, b, i, arr) => a.concat(+newCopy[i] + +newCopyEnd[i]),[]);
+  let res = sum.reduce((a, b) => a * b);
+ return res; 
+}
+
+console.log(tailAndHead([123,456,789,12,34,56,78])); //532350
+console.log(tailAndHead([1,2,3,4,5])); //945
+console.log(tailAndHead([111,2345,66,78,900])); //7293
+console.log(tailAndHead([35456,782,569,2454,875])); //12012
+          </code>
+        </pre>
+          </details>
+        </div>
+      </div>
+    </section>
+    <!-- code-example end -->
+
+    <!-- projects start -->
+    <section class="projects">
+      <div class="wrapper">
+        <div class="projects__wrapper">
+          <h2 class="project__header">
+            Recent projects
+          </h2>
+
+          <ul class="projects__list">
+            <li class="projects__item">
+              <a class="projects__link" href="https://ivandok13.github.io/traveling-site/#sign-in" target="_blank">
+                <img class="projects__image" src="./assets/img/traveling-site.png" width="1722" height="969"
+                  alt="Traveling site screenshot">
+                <h3 class="projects__header">Traveling site
+                  <div class="projects__technologies">
+                    <img src="./assets/svg/html-5-svgrepo-com.svg" alt="HTML5" title="HTML5">
+                    <img src="./assets/svg/css-svgrepo-com.svg" alt="CSS3" title="CSS3">
+                    <img src="./assets/svg/js-svgrepo-com.svg" alt="JavaScript" title="JavaScript">
+                  </div>
+                </h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- projects end -->
+
+    <!-- Education start -->
+    <section class="education">
+      <div class="wrapper">
+        <div class="education__wrapper">
+          <h3 class="education__subtitle">
+            Where I gained my knowledge
+          </h3>
+          <h2 class="education__header">
+            Education and courses
+          </h2>
+          <ul class="education__list">
+            <li class="education__item">
+              <p class="education__year">July, 2023 - now</p>
+              <p class="education__status">Certificate</p>
+              <h4 class="education__degree">JS/FE Pre-School 2023Q2</h4>
+              <p class="education__company">
+                <a class="education__link" href="https://rs.school/react/">
+                  Rolling Scopes School
+                </a>
+              </p>
+            </li>
+            <li class="education__item">
+              <p class="education__year">2019 - now</p>
+              <p class="education__status">Ph.D. in Technology
+              </p>
+              <h4 class="education__degree">
+                Laser technique and laser technology
+              </h4>
+              <p class="education__company">
+                <a class="education__link" href="https://itmo.ru/">
+                  ITMO University
+                </a>
+                , St. Petersburg, Russia
+              </p>
+            </li>
+            <li class="education__item">
+              <p class="education__year">2018 - 2019</p>
+              <p class="education__status">Certificate</p>
+              <h4 class="education__degree">
+                Upper-intermidiate
+              </h4>
+              <p class="education__company">
+                <a class="education__link" href="https://itmo.ru/">
+                  Campus54
+                </a>
+                , St. Petersburg, Russia
+              </p>
+            </li>
+            <li class="education__item">
+              <p class="education__year">2017 - 2019</p>
+              <p class="education__status">Master's degree</p>
+              <h4 class="education__degree">
+                Laser technique and laser technology
+              </h4>
+              <p class="education__company">
+                <a class="education__link" href="https://itmo.ru/">
+                  ITMO University
+                </a>
+                , St. Petersburg, Russia
+              </p>
+            </li>
+            <li class="education__item">
+              <p class="education__year">2013 - 2017</p>
+              <p class="education__status">Bachelor's degree</p>
+              <h4 class="education__degree">
+                Laser technique and laser technology
+              </h4>
+              <p class="education__company">
+                <a class="education__link" href="https://itmo.ru/">
+                  ITMO University
+                </a>
+                , St. Petersburg, Russia
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Education end -->
+  </main>
+  <!-- footer start -->
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__wrapper">
+        <a class="footer__github" href="https://github.com/IvanDok13" target="_blank">
+          <img src="./assets/svg/github-svgrepo-com.svg" width="40" height="20" alt="github-ico" class="footer__ico">
+          My GitHub
+        </a>
+        <p class="footer__year">2023</p>
+        <a class="footer__rsschool" href="https://rs.school/js-stage0/" target="_blank">
+          <img src="./assets/svg/rs_school_js.svg" width="86" height="32" alt="RS School" />
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
 </body>
+
 </html>
