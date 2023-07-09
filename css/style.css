@@ -268,7 +268,13 @@ img {
 
 .code-example__header {
   font-size: 4vh;
+  padding-bottom: 20px;
   color: #000000;
+  font-style: normal;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .code-example__subtitle {
@@ -377,9 +383,9 @@ img {
 }
 
 .education__subtitle {
-  font-size: 2vh;
   padding-bottom: 20px;
   color: white;
+  font-size: 2vh;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
