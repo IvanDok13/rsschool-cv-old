@@ -73,10 +73,10 @@ console.log(tailAndHead([35456,782,569,2454,875])); //12012
 
 ---
 ### Courses:
-Result School - HTML&CSS<br>
-Hexlet - Front-end Developer<br>
-PASV - JavaScript<br>
 The Rolling Scopes School - JS/FE Pre-School 2023Q2<br>
+Result School - HTML&CSS 2022<br>
+PASV - JavaScript 2022<br>
+Hexlet - Front-end Developer 2021<br>
 
 ---
 ### Languages:
