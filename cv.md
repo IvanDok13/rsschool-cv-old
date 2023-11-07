@@ -49,6 +49,27 @@ console.log(isPrime(1)) //false
 console.log(isPrime(2)) //true
 console.log(isPrime(-1)) //false
 ```
+**[RGB To Hex Conversion](https://www.codewars.com/kata/513e08acc600c94f01000001)**
+*The rgb function is incomplete. Complete it so that passing in RGB decimal values will result in a hexadecimal representation being returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of that range must be rounded to the closest valid value.*
+
+```javascript
+function rgb(r, g, b) {
+  let str = '';
+  if (r < 0) r = 0;
+  if (g < 0) g = 0;
+  if (b < 0) b = 0;
+  if (r > 255) r = 255;
+  if (g > 255) g = 255;
+  if (b > 255) b = 255;
+  str = `${('0' + r.toString(16)).slice(-2)}${('0' + g.toString(16)).slice(-2)}${('0' + b.toString(16)).slice(-2)}`
+  return str.toUpperCase();
+}
+
+console.log(rgb(255, 255, 255)) //"FFFFFF"
+console.log(rgb(255, 255, 300)) //"FFFFFF"
+console.log(rgb(0, 0, 0)) //"000000"
+console.log(rgb(148, 0, 211)) //"9400D3"
+```
 ---
 ### Projects
 1. [Traveling-site](https://ivandok13.github.io/traveling-site/)
