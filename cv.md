@@ -38,26 +38,16 @@ I love making improvements to workflows, solving complex problems, optimizing an
 *Define a function that takes an integer argument and returns a logical value true or false depending on if the integer is a prime.*
 
 ```javascript
-function tailAndHead(arr) {
-  let copy = arr.slice();
-  let newCopy = copy.reduce((a, b, i) => {
-    b += '';
-    if (i > 0) a.push((b[0]));
-    return a; 
-   }, [])
-  let newCopyEnd = copy.reduce((a, b, i) => {
-    b += '';
-    if (i < copy.length - 1) a.push((b[b.length - 1]));
-    return a; 
-   }, [])
-  let sum = newCopy.reduce((a, b, i, arr) => a.concat(+newCopy[i] + +newCopyEnd[i]),[]);
-  let res = sum.reduce((a, b) => a * b);
- return res; 
+const isPrime = num => {
+    for(let i = 2, s = Math.sqrt(num); i <= s; i++) {
+        if(num % i === 0) return false;
+    }
+    return num > 1;
 }
 
-console.log(tailAndHead([1,2,3,4,5])); //945
-console.log(tailAndHead([111,2345,66,78,900])); //7293
-console.log(tailAndHead([35456,782,569,2454,875])); //12012
+console.log(isPrime(1)) //false
+console.log(isPrime(2)) //true
+console.log(isPrime(-1)) //false
 ```
 ---
 ### Projects
