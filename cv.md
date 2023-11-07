@@ -34,8 +34,8 @@ I love making improvements to workflows, solving complex problems, optimizing an
 ### Code examples:
 <a href="https://www.codewars.com/users/rsschool_5bb3f79998ed1d87"><img src="https://www.codewars.com/users/rsschool_5bb3f79998ed1d87/badges/large"></a>
 
-**[Training JS #30: methods of arrayObject---reduce() and reduceRight():](https://www.codewars.com/kata/573156709a231dcec9000ee8)**
-*First, from left to right, the tail of an element and the head of the next element are added together. And then, Calculate their product and return it. All elements of arr are positive integer. If a number is less than 10, its head and tail are the same. Return result number*
+**[Is a number prime?](https://www.codewars.com/kata/5262119038c0985a5b00029f)**
+*Define a function that takes an integer argument and returns a logical value true or false depending on if the integer is a prime.*
 
 ```javascript
 function tailAndHead(arr) {
@@ -76,6 +76,7 @@ console.log(tailAndHead([35456,782,569,2454,875])); //12012
 Result School - HTML&CSS<br>
 Hexlet - Front-end Developer<br>
 PASV - JavaScript<br>
+The Rolling Scopes School - JS/FE Pre-School 2023Q2<br>
 
 ---
 ### Languages:
